@@ -52,8 +52,11 @@ const Bookshelf = () => {
         <ul>
           {books.map((book, index) => {
             return (
-              <div className="bookCardsDiv">
-                <li key={index}>
+              <div>
+                <li
+                  key={index}
+                  className="bookCard"
+                >
                   {" "}
                   {book.title} - {book.author}{" "}
                 </li>
